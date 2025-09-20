@@ -1,0 +1,248 @@
+/* Reseta margens e preenchimentos padrão para todos os elementos */
+* {
+    margin: 0;
+    /* Remove margem padrão */
+    padding: 0;
+    /* Remove preenchimento padrão */
+    box-sizing: border-box;
+    /* Inclui bordas e padding na largura e altura totais */
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: cursive;
+    /* Define a fonte padrão */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    color: rgb(75, 9, 95);
+    /* Cor do texto */
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background-color: #213048;
+    /* Cor de fundo do cabeçalho */
+    padding: 20px 0;
+    /* Espaçamento interno vertical */
+}
+
+/* Estiliza o container do cabeçalho */
+.header-container {
+    max-width: 1200px;
+    /* Largura máxima do container */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    display: flex;
+    /* Aplica layout flexível */
+    justify-content: space-between;
+    /* Espaço entre logo e menu */
+    align-items: center;
+    /* Alinha verticalmente ao centro */
+}
+
+/* Estiliza a área da logo */
+.logo img {
+    height: 80px;
+    /* Define a altura da imagem da logo */
+}
+
+/* Estiliza o menu de navegação */
+.menu ul {
+    list-style: none;
+    /* Remove os marcadores da lista */
+    display: flex;
+    /* Alinha itens horizontalmente com flexbox */
+}
+
+/* Estiliza os itens do menu */
+.menu ul li {
+    margin-left: 20px;
+    /* Espaçamento entre os itens da lista */
+}
+
+/* Estiliza os links do menu */
+.menu ul li a {
+    color: #a33cc8;
+    /* Cor branca para os links */
+    text-decoration: none;
+    /* Remove sublinhado dos links */
+    font-weight: bold;
+    font-size: 20px;
+    /* Deixa o texto em negrito */
+}
+
+/* Efeito hover nos links do menu */
+.menu ul li a:hover {
+    color: #1d70be;
+    /* Cor azul ao passar o mouse */
+}
+
+/* Estiliza a seção do título */
+.titulo {
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 50px 20px;
+    /* Espaçamento interno vertical e horizontal */
+    background-color: #6b209e;
+    /* Cor de fundo cinza claro */
+}
+
+/* Estiliza o título principal */
+.titulo h1 {
+    font-size: 2.5em;
+    /* Tamanho grande para o título */
+    margin-bottom: 20px;
+    /* Espaço abaixo do título */
+}
+
+/* Estiliza a seção de texto */
+.texto {
+    max-width: 1000px;
+    /* Largura máxima do conteúdo */
+    margin: 20px auto;
+    /* Espaço vertical e centraliza horizontalmente */
+    padding: 20px;
+    text-align: justify;
+    
+}
+
+/* Estiliza a seção de imagens */
+.imagens {
+    text-align: center;
+    /* Centraliza conteúdo */
+    padding: 20px;
+    /* Espaçamento interno */
+}
+
+/* Estiliza o título da galeria */
+.imagens h2 {
+    font-size: 2em;
+    /* Tamanho da fonte do título */
+    margin-bottom: 20px;
+    /* Espaço abaixo do título */
+}
+
+/* Estiliza o container da galeria de imagens */
+.galeria {
+    display: flex;
+    /* Usa flexbox para Layout flexível */
+    justify-content: center;
+    /* Centraliza imagens horizontalmente */
+    gap: 20px;
+    /* Espaço entre imagens */
+}
+
+/* Estiliza as imagens da galeria */
+.galeria img {
+    max-width: 100%;
+    /* Imagem responsiva, não ultrapassa container */
+    height: auto;
+    /* Mantém proporção original */
+    border-radius: 30%;
+}
+
+/* Estiliza a seção de vídeos */
+.videos {
+    text-align: center;
+    /* Centraliza conteúdo */
+    padding: 20px;
+    /* Espaçamento interno */
+}
+
+/* Estiliza o título da seção de vídeos */
+.videos h2 {
+    font-size: 2em;
+    /* Tamanho da fonte do título */
+    margin-bottom: 20px;
+    /* Espaço inferior ao título */
+}
+
+/* Estiliza o container de vídeos */
+.video-container {
+    max-width: 800px;
+    /* Limita a largura máxima */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+}
+
+/* Estiliza o iframe do vídeo */
+.video-container iframe {
+    width: 100%;
+    /* Ocupa toda a largura do container */
+    height: 450px;
+    /* Altura fixa do vídeo */
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #213048;
+    /* Cor de fundo do rodapé */
+    color: rgb(157, 61, 189);
+    /* Cor do texto para branco */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 20px 0;
+    /* Espaçamento interno vertical */
+}
+
+/* Estiliza o container do rodapé */
+.footer-container {
+    max-width: 1200px;
+    /* Largura máxima do container */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+}
+
+/* Estiliza os links das redes sociais */
+.redes-sociais a {
+    color: rgb(158, 19, 201);
+    /* Cor branca para os links */
+    text-decoration: none;
+    /* Remove sublinhado */
+    margin: 0 10px;
+    /* Espaçamento horizontal entre links */
+}
+
+/* Efeito hover nos links das redes sociais */
+.redes-sociais a:hover {
+    color: #9900ff;
+    /* Cor azul ao passar o mouse */
+}
+
+/* Media query para responsividade em telas menores */
+@media (max-width: 768px) {
+
+    /* Ajusta o layout do cabeçalho para telas menores */
+    .header-container {
+        flex-direction: column;
+        /* Empilha logo e menu verticalmente */
+    }
+
+    /* Ajusta o espaçamento do menu */
+    .menu ul {
+        flex-direction: column;
+        /* Empilha itens do menu verticalmente */
+        text-align: center;
+        /* Centraliza texto dos itens */
+    }
+
+    /* Ajusta o espaçamento dos itens do menu */
+    .menu ul li {
+        margin: 10px 0;
+        /* Espaçamento vertical entre itens */
+    }
+
+    /* Ajusta o layout da galeria de imagens */
+    .galeria {
+        flex-direction: column;
+        /* Empilha imagens verticalmente */
+        align-items: center;
+        /* Centraliza imagens horizontalmente */
+    }
+
+    /* Ajusta a altura do vídeo em telas menores */
+    .video-container iframe {
+        height: 300px;
+        /* Reduz altura do vídeo */
+    }
+}
